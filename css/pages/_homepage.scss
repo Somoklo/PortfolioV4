@@ -1,0 +1,61 @@
+body{
+    .wrapper{
+        background-color: rgba(100,100,100,0.10);
+        height: 100vh;
+      main{
+        width: 100vw;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0% 4%;
+        .portfolio{
+            .swiper-container {
+                width: 1150px;
+                height: 450px;
+                margin-top: 80px;
+                .swiper-wrapper{
+                    .swiper-slide{
+                        width: 30%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        :hover {
+                            transform:scale(1.05);
+                            border: 3px solid #ffd100;
+                        }
+                        img{
+                            width: 350px;
+                            height: 350px;
+                        }
+                    }
+                }
+                .swiper-button-prev,.swiper-button-next{
+                    background-image: none;
+                    .fas{
+                        font-size: 45px;
+                        color: rgba(0,0,0,0.8);
+                    }
+                }
+                .swiper-pagination-bullet-active{
+                    background: #ffd100;
+                }
+            }  
+        }
+        }
+    }
+}
+
+/////////////////////Responsive////////////////////////////////
+
+// GSM //
+
+@media only screen and (max-width: 600px){
+
+}
+
+// Tablette //
+
+@media only screen and (max-width: 1200px){
+
+}

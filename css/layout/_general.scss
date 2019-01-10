@@ -1,0 +1,22 @@
+.hidden{
+    display: none !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+.unclicked{
+    color: rgba(0,0,0,0.8);
+}
+.clicked{
+    color: #ffd100;
+}
+.color{
+    color: #ffd100;
+    font-weight: 400;
+}

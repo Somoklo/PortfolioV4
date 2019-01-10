@@ -1,0 +1,140 @@
+body{
+    main{
+        position: relative;
+        .cv{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: -30px;
+            h2{
+                line-height: 85px;
+                text-align: center;
+            }
+            .box-parcours{
+                width: 580px;
+                height: 800px;
+                h3{
+                    margin-top: -5px;
+                    background-color: #ffd100;
+                    padding: 12px 10px 12px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+                &--wrap{
+                    display: flex;
+                    padding: 5px 20px 15px 60px;
+                    background-color: #fff;
+                    margin-top: -20px;
+                    .date{
+                        width: 75px;
+                        line-height: 8px;
+                    }
+                    .two-lines{
+                        p{
+                        padding: 0 30px 0px;
+                        line-height: 8px;
+                        }
+                    }    
+                    .gras{
+                        font-weight: 500;
+                    }
+                    
+                }
+                .first{
+                    margin-bottom: 30px;
+                }
+            }
+            &--txt{
+                width: 250px;
+                font-size: 18px;
+                background-color: #ffd100;
+                padding: 10px 20px;
+                position: absolute;
+                top: 0;
+                left: 4%;
+            }
+            &--contenu{
+                position: absolute;
+                width: 280px;
+                height: 350px;
+                background-color: #fff;
+                top: 10%;
+                right: 4%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                h3{
+                    background-color: #ffd100;
+                    padding: 12px 10px 12px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+                .box-skills{
+                    padding: 0px 18px;
+                    
+                  h4{
+                    font-weight: 500;
+                    margin-top: 0px;
+                    text-align: center;
+                }
+                &--duo{
+                    display: flex;
+                    justify-content: center;
+                    .txt-wrap{
+                    width: 90px;
+                    font-size: 15px;
+                    line-height: 23px;
+                    margin-top: -8px;
+                    }
+                    .left{
+                        border-right: 1px solid rgba(0,0,0,0.8);
+                    }
+                    .right{
+                        margin-left: 15px;
+                    }
+                    .level{
+                        width: 20px;
+                        margin-left: 90px;
+                    }
+                }
+                }
+            }
+            .buttons{
+                width: 280px;
+                position: fixed;
+                margin-top: 80px;
+                display: flex;
+                justify-content: space-evenly;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                padding: 10px;
+                margin: 0 -50px;
+                background-color: rgba(0,0,0,0.8);
+                border-radius: 10px;
+                color: #fff;
+                font-size: 18px;
+                text-align: center;
+                .fa-linkedin-in{
+                    font-size: 20px;
+                }
+                .fa-github{
+                    font-size: 25px;
+                }
+                .fa-file-download{
+                    font-size: 25px;
+                    color: #fff;
+                }
+            }
+            :hover{
+                background-color: #ffd100;
+            }    
+            :hover .fab .fas{
+                color:rgba(0,0,0,0.8); 
+            }    
+            }
+        }
+    }
+}

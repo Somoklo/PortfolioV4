@@ -1,0 +1,141 @@
+body{
+    .header{
+        background-color:#fff;
+        height: 300px;
+        width: 100vw;
+        padding: 2% 4%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        // haut du header
+        &--haut{
+          .blocName{
+            display: flex;
+            align-items: center;
+          &--line{
+              width: 15px;
+              height: 83px;
+              background-color: #ffd100;
+              margin-right: 18px;
+              margin-top: 8px;
+          }
+          }
+          .skills{
+              margin-top: -15px;
+              margin-left: 35px;
+          }
+        }
+        // bas du header
+        &--bas{
+            margin-top: 28px;
+            display: flex;
+            .menu{
+                width: 210px;            
+                display: flex;
+                justify-content: space-between;
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    p{
+                        display: none;
+                    }
+                    i{
+                        transition: .2s all ease-in-out;
+                    }
+                }
+                :hover i{
+                        transform:scale(1.25);
+                    }
+                :hover p{
+                        display: block;
+                    }
+                &--icone{
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    
+                    .fas{
+                        font-size: 42px;
+                    }
+                    .fa-paper-plane{
+                        font-size: 38px
+                    }
+                }
+            }
+        }
+    }
+}
+
+/////////////////////Responsive////////////////////////////////
+
+// GSM //
+
+@media only screen and (max-width: 530px){
+// bas du header
+body{
+    .header{
+        height: 260px;//
+        &--haut{
+          .skills{
+              h3{//
+                  font-size: 18px;
+                  line-height: 8px;
+              }
+          }
+        }
+        // bas du header
+        &--bas{
+            margin-top: 28px;
+            display: flex;
+            .menu{
+                width: 55px;            
+                display: flex;
+                flex-direction: column; //
+                justify-content: space-between;
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    p{
+                        display: none;//
+                    }
+                    i{
+                        transition: .2s all ease-in-out;
+                    }
+                }
+                :hover i{
+                        transform:scale(1.25);
+                    }
+                :hover p{
+                        display: none; //
+                    }
+                &--icone{
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    
+                    .fas{
+                        font-size: 42px;
+                    }
+                    .fa-paper-plane{
+                        font-size: 38px
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// Tablette //
+
+@media only screen and (max-width: 1200px){
+
+}

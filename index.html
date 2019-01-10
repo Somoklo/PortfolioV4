@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <link rel="stylesheet">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <title> Portfolio </title>
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css">
+</head>
+    <body>
+        <div class="wrapper">
+            <!-- Menu gauche -->
+            <header class="header">
+                <!-- haut header -->
+                <section class="header--haut">
+                    <!-- Name + yellow line -->
+                    <div class="blocName">
+                        <!-- yellow-b -->
+                        <div class="blocName--line"></div>
+                        <div class="blocName--name">
+                            <h1 class="h1b">Sophie</h1>
+                            <h1 class="h1l">Moklowicz</h1>
+                        </div>
+                    </div>
+                    <!-- skills -->
+                    <div class="skills">
+                        <h3 class="front-end-col">Front-end developer</h3>  
+                        <h3 class="web-col">Webdesigner</h3>  
+                        <h3 class="graphic-col">Graphic designer</h3>  
+                        <h3 class="illu-col">Illustrator</h3>  
+                    </div>
+                </section>
+                <!-- bas header -->
+                <section class="header--bas">
+                    <nav class="menu">
+                        <li><a href="#" class="menu--icone" data-type="porfolio">
+                        <i class="fas clicked fa-th-large"></i>
+                        <p>Portfolio</p></a></li>
+                        <li><a href="#" class="menu--icone" data-type="profile"><i class="fas fa-user-circle"></i><p>Profile</p></a></li>
+                        <li> <a href="#" class="menu--icone" data-type="contact"><i class="fas fa-paper-plane"></i><p>Contact</p></a></li>
+                    </nav>
+                </section>
+            </header>
+            <main>
+<!------------------ Portfolio----------------------------------->
+                <section class="portfolio page" data-type="porfolio">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <a href="projet.html" class="swiper-slide"><img class="illu" src="img/michauxperso.jpg" alt=""></a>
+                            <a href="projet.html" class="swiper-slide"><img class="graphic" src="img/square.jpg" alt=""></a>
+                            <a href="projet.html" class="swiper-slide"><img class="front-end web" src="img/chillysNS2.png" alt=""></a>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+                        <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </section>
+<!------------------ CV ----------------------------------------->
+                <section class="cv page hidden" data-type="profile">
+                    <h2>Profile & skills</h2>
+                    <!-- Expériences & formations -->
+                        <div class="box-parcours">
+                            <h3>Expériences</h3>
+                            <div class="box-parcours--wrap first">
+                                <p class="date">2017-2018</p>
+                                <div class="two-lines">
+                                    <p class="gras">Junior AD/graphiste</p> 
+                                    <p>Good Morning, groupe Publicis</p>
+                                </div>
+                            </div>
+                            <!-- Formations -->
+                            <h3>Formations</h3>
+                            <div class="box-parcours--wrap">
+                                 <p class="date">2018 - 2019 </p>
+                                 <div class="two-lines">
+                                    <p>CEPEGRA Bruxelles</p> 
+                                    <p class="gras">Formation Front-end developer/ Webdesigner</p>
+                                </div>
+                            </div>
+                            <div class="box-parcours--wrap">
+                                    <p class="date">2014-2017 </p>
+                                    <div class="two-lines">
+                                       <p>ESA le 75 </p> 
+                                       <p>Bachelier en Arts plastiques, visuels et de l'espace</p>
+                                       <p class="gras"> option Graphisme</p>
+                                   </div>
+                               </div>
+                            <div class="box-parcours--wrap">
+                                <p class="date">2010-2013 </p>
+                                <div class="two-lines">
+                                   <p>ESA Saint-Luc Bruxelles </p> 
+                                   <p>Bachelier en Arts plastiques, visuels et de l’espace
+                                    </p>
+                                   <p class="gras"> option Illustration</p>
+                               </div>
+                            </div>
+                        </div>
+                    <!-- bloc txt yellow -->
+                        <div class="cv--txt">
+                            <p>
+                            Communiquer de manière efficace
+                            en usant d'éléments graphiques.
+                            Créer des visuels forts et non
+                            dénués de sens. Mettre mes
+                            compétences au service les unes
+                            des autres.</p>
+                        </div>
+                        <!-- skills -->
+                        <div class="cv--contenu">
+                          <h3>Skills</h3>
+                          <div class="box-skills">
+                          <h4>Informatique & développement</h4>
+                          <div class="box-skills--duo">
+                            <p class="txt-wrap left">Photoshop
+                                Illustrator
+                                Indesign
+                                Adobe XD
+                                After effect
+                                Animate </p>
+                            <p class="txt-wrap right">
+                                HTML & CSS
+                                Javascript/jquery
+                                Vue.js
+                                Github
+                                SASS
+                                Wordpress
+                                Bootstrap </p>
+                            </div>
+                            <h4>Langues</h4>
+                            <div class="box-skills--duo">
+                                <p class="txt-wrap">
+                                    Français
+                                    Néerlandais
+                                    Anglais </p>
+                                <p class="txt-wrap level">
+                                   C2 A1 A2</p>
+                            </div> 
+                        </div>
+                        <div class="buttons">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-file-download"></i></a>
+                        </div>
+                </section>
+<!------------------ Formulaire de contact ---------------------->
+                <section class="contact page hidden" data-type="contact">
+                    <form action="" method="get">
+                        <h2>Contact me !</h2>
+                        <div>
+                            <label for="nom"></label>
+                            <input class="box" type="text" name="nom" id="nom"required autofocus maxlength="10" autocomplete="name"placeholder="Your name" >
+                        </div>
+                        <!-- email -->
+                        <div>
+                            <label for="email"></label>
+                            <input class="box" type="email" name="email"id="email" required placeholder="Your email address" >
+                        </div>
+                        <!-- objet -->
+                        <div>
+                            <label for="objet"></label>
+                            <input class="box" type="objet" name="objet"id="objet" required placeholder="Object" >
+                        </div>
+                        <!-- box message -->
+                        <div>
+                            <label for="msg"></label>
+                            <textarea name="msg" id="msg" placeholder="Your message"></textarea>
+                        </div>
+                        <!-- bouton envoyer -->
+                        <div class="bouton-envoyer">
+                            <input type="submit" name="envoyer" id="envoyer"value="send">
+                        </div>
+                    </form>    
+                </section>
+            </main>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

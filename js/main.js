@@ -88,12 +88,29 @@ $(illu).hover(function(){
 
 /////////////////// Responsive //////////////////////////////
 
-$(window).resize(function() {
+
+function size_page (){
   let width = $(window).width();
-  if (width < 1200){
-    mySwiper.params.slidesPerView=1;
-  }
-  else{
-    mySwiper.params.slidesPerView=3;
+    if(width < 990){
+      mySwiper.params.slidesPerView=1;
     }
+    else{
+      mySwiper.params.slidesPerView=3;
+      }
+}
+
+size_page();
+
+$(window).resize(function() {
+    size_page();
+  });
+
+///////////////////// Burger Menu //////////////////////////////
+
+  let myMenu = document.querySelector(".burger-menu");
+  let myNav = document.querySelector(".menu");
+  
+  myMenu.addEventListener("click", () => {
+      myMenu.classList.toggle("active");
+      myNav.classList.toggle("active");
   });
